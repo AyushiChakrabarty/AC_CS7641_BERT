@@ -28,15 +28,4 @@ To optimize QA systems with BERT, we have:
 
 Our initial results have shown promising improvements in prediction accuracy and response efficiency. However, we are also observing the complexities involved in balancing model performance with computational demands.
 
-#### Midterm Discussion
-Our midterm phase has brought forward insightful findings and challenges. We are exploring BERT's intricate decision-making process to better understand and interpret its capabilities. As we advance, we aim to address the trade-offs between model complexity and responsiveness, given BERT's computational requirements. Our ongoing efforts also include assessing BERT's adaptability for broader, large-scale deployment in diverse QA scenarios.
 
-## Team Contributions
-
-| Student Name           | Contributed Aspects                                 |
-|------------------------|-----------------------------------------------------|
-| Ayushi Chakrabarty     | Problem Definition, Documentation, Report Writing   |
-| Cameron George Potter  | Ideation, Methods, Model Training                   |
-| Kshitij Pathania       | Model Evaluation, Results Compilation, Data Visualization |
-| Prateek                | Problem Definition, Ideation, Documentation         |
-| Sneha Maheshwari       | Problem Definition, Report Writing, Documentation   |
