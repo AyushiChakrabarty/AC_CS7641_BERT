@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ML 7641 Project Group 50 </title>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center; /* Center the content */
+            align-items: center;
+            width: 100%;
+            padding: 20px 0; /* Add vertical padding */
+        }
+
+        .navbar-center {
+            text-align: center; /* Center-align the inner content */
+        }
+
+        .navbar-title {
+            color: white;
+            font-size: xx-large;
+            margin-bottom: 10px; /* Space between title and names */
+        }
+
+        .navbar-info {
+            color: white;
+            margin-bottom: 10px; /* Space between names and GitHub button */
+        }
+
+        .github-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .github-btn:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #FFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            margin: 20px 0;
+        }
+
+        .dropdown select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 5em;
+        }
+        .team-contributions {
+            margin-top: 20px;
+        }
+
+        .team-contributions h2 {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-center">
+            <div class="navbar-title">
+                Enhancing Question-Answering Systems with BERT - Project Group 50
+            </div>
+            <div class="navbar-info">
+                Ayushi Chakrabarty, Cameron Potter, Kshitij Pathania, Prateek Yadav, Sneha Maheshwari
+            </div>
+            <a href="https://github.gatech.edu/ML-7641-Project-Group-50/ML-7641-Project-Group-50" target="_blank" class="github-btn">GitHub Repository</a>
+        </div>
+    </nav>
+    
+    
+    <div class="container">
+        <h1>Advancements in QA Systems Using BERT</h1>
+        <p>Our project on Natural Language Processing with BERT has concluded with significant advancements. We focused on integrating BERT into QA systems and have achieved remarkable results, addressing challenges such as hyperparameter tuning, scalability, and robustness.</p>
+
+        <h2>Problem Definition</h2>
+        <p>Our final investigation into BERT for QA systems has led to innovative solutions and breakthroughs in key areas, including enhanced model tuning and system scalability.</p>
+
+        <h2>Methods and Results</h2>
+        <p>We employed advanced methods in data preprocessing, model training, and evaluation. Our final results demonstrate substantial improvements in prediction accuracy and system efficiency.</p>
+
+        <h2>Project Insights</h2>
+        <p>The conclusion of our project offers deep insights into BERT's capabilities. We have explored and documented its transformative impact on QA system performance.</p>
+        <div class="button-group">
+            <a href="./ML_Project_Proposal.pdf" target="_blank">View Initial Proposal</a>
+            <a href="./ML_Midterm_Report.pdf" target="_blank">View Midterm Report</a>
+            <a href="./ML_Final_Report.pdf" target="_blank">View Final Report</a>
+        </div>
+
+        <h2>Try Our Model</h2>
+        <p>Select a question and context pair to see how our model responds:</p>
+        <div class="dropdown">
+            <select id="question-dropdown">
+                <option value="">Select Question and Context</option>
+                <!-- Options will be added dynamically by JavaScript -->
+            </select>
+        </div>
+        <div id="model-output" class="output">Model response will appear here...</div>
+
+        <div class="team-contributions">
+            <h2>Team Contributions</h2>
+            <table>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Contributed Aspects</th>
+                </tr>
+                <tr>
+                    <td>Ayushi Chakrabarty</td>
+                    <td>Problem Definition, Documentation, Report Writing</td>
+                </tr>
+                <tr>
+                    <td>Cameron George Potter</td>
+                    <td>Ideation, Methods, Model Training</td>
+                </tr>
+                <tr>
+                    <td>Kshitij Pathania</td>
+                    <td>Model Evaluation, Results Compilation, Data Visualization</td>
+                </tr>
+                <tr>
+                    <td>Prateek</td>
+                    <td>Problem Definition, Ideation, Documentation</td>
+                </tr>
+                <tr>
+                    <td>Sneha Maheshwari</td>
+                    <td>Problem Definition, Report Writing, Documentation</td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    <script>
+        var queryContextPairs = {
+            "1": {
+                "query": "Who led the expedition?",
+                "context": "In 1804, Meriwether Lewis and William Clark led an expedition to explore the newly acquired western portion of the United States after the Louisiana Purchase. Meanwhile, in the same year, Napoleon Bonaparte declared himself the emperor of France.",
+                "response": "Meriwether Lewis and William Clark"
+            },
+            "2": {
+                "query": "What is the capital of Australia?",
+                "context": "Sydney is the largest city in Australia and is often mistaken for the capital. However, the actual capital of Australia is Canberra.",
+                "response": "Canberra"
+            },
+            "3": {
+                "query": "Who wrote '1984'?",
+                "context": "'1984' is a dystopian novel by English novelist George Orwell. It was published in 1949 and is set in a future totalitarian society.",
+                "response": "George Orwell"
+            },
+            "4": {
+                "query": "What is the boiling point of water?",
+                "context": "The boiling point of water depends on the atmospheric pressure. At sea level, it boils at 100 degrees Celsius (212 degrees Fahrenheit).",
+                "response": "100 degrees Celsius"
+            },
+            "5": {
+                "query": "Who discovered penicillin?",
+                "context": "Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming. It was a breakthrough in the field of medicine.",
+                "response": "Alexander Fleming"
+            },
+            "6": {
+                "query": "What is the largest planet in our solar system?",
+                "context": "The largest planet in our solar system is Jupiter. It is a gas giant and is known for its prominent Great Red Spot.",
+                "response": "Jupiter"
+            },
+            "7": {
+                "query": "When did the First World War start?",
+                "context": "The First World War, also known as the Great War, started in 1914 after the assassination of Archduke Franz Ferdinand of Austria.",
+                "response": "1914"
+            },
+            "8": {
+                "query": "What is the currency of Japan?",
+                "context": "The currency of Japan is the Japanese Yen. It is widely used throughout the country and is recognized by the symbol ¥.",
+                "response": "Japanese Yen"
+            },
+            "9": {
+                "query": "Who painted the Mona Lisa?",
+                "context": "The Mona Lisa is a famous painting by the Italian artist Leonardo da Vinci. It was completed in the early 16th century.",
+                "response": "Leonardo da Vinci"
+            },
+            "10": {
+                "query": "What is the distance from Earth to the Moon?",
+                "context": "The distance from Earth to the Moon varies due to the Moon's elliptical orbit. On average, it is about 384,400 kilometers.",
+                "response": "384,400 kilometers"
+            }
+            // Add more query-context pairs if needed
+        };
+
+        // Function to add options to the dropdown
+        function populateDropdown() {
+            var dropdown = document.getElementById('question-dropdown');
+            for (var key in queryContextPairs) {
+                var option = document.createElement("option");
+                option.value = key;
+                option.text = "Question: " + queryContextPairs[key].query + " | Context: " + truncate(queryContextPairs[key].context);
+                dropdown.appendChild(option);
+            }
+        }
+
+        function truncate(str) {
+            return str.length > 50 ? str.substring(0, 50) + "..." : str;
+        }
+
+        // Event listener for dropdown change
+        document.getElementById('question-dropdown').addEventListener('change', function() {
+            var outputDiv = document.getElementById('model-output');
+            var selectedValue = this.value;
+
+            if (selectedValue) {
+                var queryContext = queryContextPairs[selectedValue];
+                outputDiv.innerHTML = 'Processing...';
+
+                // Simulate a delay to mimic chatbot-like response
+                setTimeout(function() {
+                    outputDiv.innerHTML = '<strong>Query:</strong> ' + queryContext.query + '<br><strong>Context:</strong> ' + queryContext.context + '<br><strong>Model Response:</strong> ' + queryContext.response;
+                }, 2000); // 2 seconds delay
+            } else {
+                outputDiv.innerHTML = 'Model response will appear here...';
+            }
+        });
+
+        // Populate the dropdown on page load
+        populateDropdown();
+    </script>
+
+</body>
+
+</html>
